@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Easy Tabi</title>  
-  <meta charset="UTF-8">
-<header>Easy Tabi</header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Tabi</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <header>
+        <h1>Easy Tabi</h1>
+    </header>
     <div class="topnav">
-      <a href="./home.html" id="home">Home</a>
-      <a href="./aboutus.html" id="home">About Us</a>
-      <a href="./contactus.html" id="contact">Contact Us </a>
-      <input type="text" placeholder="Search">
-      <button type="search">Search</button>
-      <button type="reset">Reset</button>
+        <a href="./home.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
     </div>
+    <div class="search-container">
+        <input type="text" id="searchField" placeholder="Search">
+        <button id="searchButton">Search</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <div id="recommendations">
+        <!-- Recommendations will be displayed here -->
+    </div>
+    <button id="clearButton">Clear</button>
+    <script src="./travel_recommendation.js"></script> <!-- Link to your JS file -->
 </body>
 </html>
